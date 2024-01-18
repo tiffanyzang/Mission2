@@ -22,6 +22,7 @@ public class Program
         //change user input to integer
         RollNum = int.Parse(RollInput);
 
+        //call method and return result to array
         int[] array = dr.DiceRollResults(RollNum);
 
         //Write the result message with total number of rolls 

@@ -8,6 +8,7 @@ namespace Mission2
 {
     internal class RollDice
     {
+        //method simulating the rolls
         public int[] DiceRollResults(int RollNum)
         {
             //create an array
@@ -16,17 +17,15 @@ namespace Mission2
             //loop through to get a dice throw for each roll
             for (int roll = 0; roll < RollNum; roll++)
             {
-                //generate a random number for "dice 1"
+                //generate a random number for "dice 1" and assign to variable
                 Random rnd = new Random();
-                //assign it to a variable for "dice 1"
                 int roll1 = rnd.Next(1, 7);
 
-                //generate a new random number for "dice 2"
+                //generate a random number for "dice 2" and assign to variable
                 Random rnd2 = new Random();
-                //assign it to a variable for "dice 2"
                 int roll2 = rnd2.Next(1, 7);
 
-                //total dice roll and access that specific array and add 1 (for rolled once)
+                //add dice rolls and access that specific array and add 1
                 arr[roll1 + roll2]++;
                 
             }
